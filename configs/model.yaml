@@ -1,0 +1,25 @@
+models:
+  face_detector:
+    backend: "mediapipe_face_detection"
+    min_detection_confidence: 0.5
+  face_mesh:
+    backend: "mediapipe_face_mesh"
+    refine_landmarks: true
+    min_detection_confidence: 0.5
+    min_tracking_confidence: 0.5
+  pose_estimator:
+    backend: "mediapipe_pose"
+    model_complexity: 1
+    min_detection_confidence: 0.5
+    min_tracking_confidence: 0.5
+fusion:
+  attention_weights:
+    face_presence: 0.35
+    gaze_forward: 0.45
+    posture_engaged: 0.20
+  affect_weights:
+    brow_tension: 0.45
+    mouth_downturn: 0.30
+    eye_squint: 0.25
+  blocked_logic:
+    blocked_if_attention_low_and_affect_high: true
