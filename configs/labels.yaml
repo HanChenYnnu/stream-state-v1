@@ -1,0 +1,31 @@
+labels:
+  S0:
+    name_zh: "正常推进"
+    name_en: "normal_progress"
+    priority: 5
+    color: "#2E7D32"
+  S1:
+    name_zh: "轻度分心"
+    name_en: "mild_distraction"
+    priority: 4
+    color: "#F9A825"
+  S2:
+    name_zh: "高风险走神"
+    name_en: "high_risk_mind_wandering"
+    priority: 3
+    color: "#EF6C00"
+  S3:
+    name_zh: "情绪受挫"
+    name_en: "emotional_frustration"
+    priority: 2
+    color: "#C62828"
+  S4:
+    name_zh: "疑似认知受阻"
+    name_en: "possible_cognitive_block"
+    priority: 1
+    color: "#6A1B9A"
+  S5:
+    name_zh: "暂时离开"
+    name_en: "temporarily_away"
+    priority: 0
+    color: "#455A64"

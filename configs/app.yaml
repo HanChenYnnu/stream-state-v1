@@ -1,0 +1,24 @@
+runtime:
+  fps_input: 25
+  fps_output: 5
+  window_sec: 4
+  stride_sec: 1
+  resize_width: 640
+  resize_height: 360
+  draw_overlay: true
+  save_figure: true
+
+paths:
+  input_video: "data/raw/demo_videos/sample.mp4"
+  output_video: "data/outputs/videos/demo_overlay.mp4"
+  output_csv: "data/outputs/csv/demo_states.csv"
+  output_figure: "data/outputs/figures/demo_timeline.png"
+
+device:
+  torch_device: "cuda:0"
+  fallback_device: "cpu"
+  enable_half_precision: false
+
+api:
+  host: "0.0.0.0"
+  port: 8000
